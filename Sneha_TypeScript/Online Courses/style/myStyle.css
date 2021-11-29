@@ -1,0 +1,18 @@
+#homepage{
+    display: block;
+}
+#userReg{
+    visibility: hidden;
+}
+#login{
+    visibility: hidden;
+}
+#option{
+    visibility: hidden;
+}
+#courses{
+    visibility: hidden;
+}
+#enrolled{
+    visibility: hidden;
+}

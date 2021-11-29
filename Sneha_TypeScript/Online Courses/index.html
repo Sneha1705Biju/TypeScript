@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Online Courses</title>
+        <link rel="stylesheet" href="style/myStyle.css">
+        <script src="script/myScript.js"></script>
+    </head>
+    <body>
+        <!-- Creating Home -->
+        <div id="homePage">
+            <h2>Home Page</h2>
+            <button type="button" onclick="UserReg()">User Register</button><br><br>
+            <button type="button" onclick="Login()">Login</button><br><br>
+        </div>
+
+        <!-- Creating User Registration  -->
+        <div id="userReg">
+            <h2>New User Registration</h2>
+            Name: <input type="text" name="name" id="username"><br><br>
+            Age: <input type="number" name="age" id="userage" ><label id="age" onforminput="ageCheck()"></label><br><br>
+            Phone Number: <input type="number" name="mob" id="usermob" onforminput="mobCheck()"><br><br>
+            <button type="button" onclick="UserLogin()">Register</button>
+        </div>
+
+        <!-- Creating Login -->
+        <div id="login">
+            <h2>Login</h2>
+            User Login ID: <input type="text" id="userId" name="userid"><br><br>
+            <button type="button" onclick="Coursera()">Login</button><br><br>
+        </div>
+
+        <!-- Creating course index -->
+        <div id="option">
+            <h2>Course Index</h2>
+            <button type="button" onclick="AvailableCourse()">Available Courses</button>
+            <button type="button" onclick=" Enroll()">Enrolled Courses</button>
+            <button type="button" onclick="GoBack()">Go Back</button>
+        </div>
+
+        <!-- Available courses -->
+        <div id="courses">
+            <h2>Available Courses</h2>
+            <select name="course" id="courseList">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="ts">TypeScript</option>
+                <option value="csharp">C#</option>
+            </select><br><br>
+            Required days to complete the course: <input type="number" id="days"><br><br>
+            <button type="button" onclick="BackOption()">Enroll</button>
+        </div>
+
+        <!-- Enrolled courses -->
+        <div id="enrolled">
+            <h2>Enrolled courses</h2>
+            <button type="button" onclick=" OptionBack()">Go back</button><br><br>
+        </div>
+    </body>
+</html>
